@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <h1>First Website</h1>
+    <div id="container">
+    A photo of nature
+    <img id="banner" src="https://flask2222.aditya-krishna3.repl.co/static/nature.avif" height="320">
+    <h2>About nature</h2>
+ <p>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit nisl, auctor ut tincidunt sit amet, sodales eu enim. Cras rutrum vel velit at maximus. Vivamus hendrerit iaculis urna a luctus. Nunc semper dui in magna interdum, sed luctus eros cursus. Fusce fermentum sapien ut magna varius feugiat. Aenean nec sollicitudin justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+In id purus condimentum, feugiat leo tincidunt, venenatis metus. Donec fringilla, dolor quis ultrices tincidunt, justo leo tempor elit, quis sodales tellus sem pretium lorem. Vestibulum condimentum diam et vehicula gravida. Sed nec nibh consequat, tincidunt nibh pharetra, finibus nunc. Quisque vulputate libero vestibulum orci rutrum porttitor. Morbi fermentum gravida aliquet.
+ </p>
+    <h2> Open postions</h2>
+    <div>
+      {%for job in jobs%}
+      <div style="margin-bottom:4px;"><h2><b>{{job['title']}}</b></h2></div>
+       <div ><h3>Location:<b>{{job['location']}}</b></h3></div>
+      <button style="background-color:lightblue;">Apply</button>
+      {% endfor %}
+    </div>
+    <div style="text-align:center;">
+      <button>Contact us</button>
+    </div>
+    </div>
+  </body>
+</html>
